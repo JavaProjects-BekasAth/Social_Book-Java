@@ -5,16 +5,3 @@ and the second a closed group in which user can be member only if they have a fr
 who have to be tested when a user has been infected (his/her friends and their friends).
 
 
-code for email validation:
-  Scanner input = new Scanner(System.in); 
-     
-     String email = input.nextLine();
-     
-     while(!(email.matches("(dai|iss|ics)[0-9]{3,5}@uom.edu.gr"))){
-       
-       System.out.println("try again");
-       
-       email = input.nextLine();
-     }
-     
-     System.out.println("ok");
