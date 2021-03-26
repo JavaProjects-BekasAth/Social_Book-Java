@@ -1,6 +1,9 @@
 import java.util.ArrayList;
+import java.util.Scanner;
 
 public class User {
+	
+	Scanner input = new Scanner(System.in);
 
 	private String name;
 	private String email;
@@ -8,9 +11,16 @@ public class User {
 	ArrayList<Group> groups = new ArrayList<Group>();
 	
 	
-	public User(String name, String email) {
+	public User(String name, String email) {	
 		
 		this.name = name;
+		
+		while(!(email.matches("(dai|iis|ics)[0-9]{3,5}@uom.edu.gr"))){
+			   
+			   System.out.println("Invalid e-mail for user " + name +". Try again");
+			   email = input.nextLine();
+		}
+		
 		this.email = email;
 	}
 

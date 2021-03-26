@@ -16,7 +16,7 @@ public class Main {
 		User u5 = new User("Nikos", "dai1758@uom.edu.gr");
 		User u6 = new User("Babis", "ics19104@uom.edu.gr");
 		User u7 = new User("Stella", "dai1827@uom.edu.gr");
-//		User u8 = new User("Eleni", "ics2086@gmail.com");          invalid email code uncompleted...
+		User u8 = new User("Eleni", "ics2086@gmail.com");         
 		
 		Group g1 = new Group("WebGurus","A group for web passionates");
 		ClosedGroup g2 = new ClosedGroup("ExamSolutions","Solutions to common examquestions"); 
@@ -111,20 +111,6 @@ public class Main {
 		}
 		
 		System.out.println("-----------------------------");
-		
-		
-  
-
-		 
-
-		 
-		
-//		String email = input.nextLine();
-//		
-//		if(email.matches("[dai]^[ics]^[iis]"+"[abc]"+".com"))
-//			System.out.println("true");
-//		else 
-//			System.out.println("false");
 
 		  input.close();
 	}
